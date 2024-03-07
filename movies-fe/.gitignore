@@ -1,28 +1,23 @@
-# Files to ignore when pushing a PyCharm Django project to github:
+.DS_Store
+node_modules
+/dist
 
-#files only needed by a PyCharm project and local-only django files
-.idea/
-local_settings.py
 
-#the virtual environment name - use the name of your virtual environment
-#if different from venv
-venv
+# local env files
+.env.local
+.env.*.local
 
-### Django ###
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-db.sqlite3
-media
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# Ignore Django Migrations in Development if you are working on team
-
-# Only for Development only
-**/migrations/**
-# !**/migrations
-!**/migrations/__init__.py
-
-#ignore the front-end folder. it is deployed separately
-skillsList_fe
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
